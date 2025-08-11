@@ -17,7 +17,7 @@ public class GeneradorDeProductosController {
         this.chatClient = chatClient;
     }*/
 
-    public GeneradorDeProductosController(@Qualifier("gpt-40")  ChatClient.Builder chatClientBuilder) {
+    public GeneradorDeProductosController(ChatClient.Builder chatClientBuilder) {
         this.chatClient = chatClientBuilder.build();
     }
 
